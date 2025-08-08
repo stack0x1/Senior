@@ -1,22 +1,29 @@
-table {
-    border-collapse: collapse;   /* Merge borders into single lines */
-    width: 75%;                 /* Make table span full width */
+.sticky-header-table thead th {
+    position: sticky;
+    top: 0;
+    background-color: #c77914;
+    z-index: 2;
+    border-collapse: collapse;
+    border-bottom: 2px solid #ddd; /* keep only the bottom border for header */
+    padding: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.06);
     font-family: Arial, sans-serif;
-    font-size: 28px;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
 }
 
-table tr:hover {
-    background-color: #4b97bd;   /* Light blue on hover */
+/* Remove all borders from table body cells */
+.sticky-header-table td {
+    border: none;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+    padding: 0px; /* keep padding for readability */
 }
 
-th {
-    background-color: #c77914;   /* Green header */
-    color: white;                /* White text */
-    text-align: left;
-    padding: 10px;
-}
-
-/* Cell styling */
-td {
-    border-bottom: 5px solid #000000; 
+/* Hover effect fills entire row with no gaps or borders */
+.sticky-header-table tr:hover td {
+    background-color: #90ec98;
 }

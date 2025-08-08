@@ -1,14 +1,14 @@
- Picture,Liscence Plate, Speed, Direction
-assets/img/frame00034.png,TFC3044,46,N
-assets/img/frame00067.png,LSG2926,41,N
-assets/img/frame00079.png,LGS0456,42,N
-assets/img/frame00097.png,MYH3962,48,N
-assets/img/frame00169.png,SPX8628,52,N
-assets/img/frame00223.png,JTN6516,51,N
-assets/img/frame00286.png,CBK5927,55,N
-assets/img/frame00424.png,SBK5932,50,S
-assets/img/frame00523.png,JXZ4358,47,N
-assets/img/frame01420.png,TKG3176,51,S
-assets/img/frame00007.png,HSB6186,44,S
-assets/img/frame00748.png,LTZ5505,46,N
-assets/img/frame00199.png,RRK5734,43,N
+lat,lon, Picture,Liscence Plate, Speed, Direction
+32.99221039,-96.75637054,assets/img/frame00034.png,TFC3044,46,N
+32.99221039,-96.75637054,assets/img/frame00067.png,LSG2926,41,N
+32.99221039,-96.75637054,assets/img/frame00079.png,LGS0456,42,N
+32.99221039,-96.75637054,assets/img/frame00097.png,MYH3962,48,N
+32.99221039,-96.75637054,assets/img/frame00169.png,SPX8628,52,N
+32.99221039,-96.75637054,assets/img/frame00223.png,JTN6516,51,N
+32.99221039,-96.75637054,assets/img/frame00286.png,CBK5927,55,N
+32.99221039,-96.75637054,assets/img/frame00424.png,SBK5932,50,S
+32.99221039,-96.75637054,assets/img/frame00523.png,JXZ4358,47,N
+32.99221039,-96.75637054,assets/img/frame01420.png,TKG3176,51,S
+32.99221039,-96.75637054,assets/img/frame00007.png,HSB6186,44,S
+32.99221039,-96.75637054,assets/img/frame00748.png,LTZ5505,46,N
+32.99221039,-96.75637054,assets/img/frame00199.png,RRK5734,43,N
