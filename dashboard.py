@@ -13,8 +13,8 @@ fig = px.scatter_mapbox(
     lon="lon",
     hover_name=df.columns[1] if len(df.columns) > 1 else None,
     hover_data={"lat": True, "lon": True},
-    zoom=11,
-    height=600
+    zoom=16,
+    height=350
 )
 
 fig.update_traces(marker=dict(size=25, color="red"))
@@ -37,7 +37,7 @@ def generate_table(dataframe, max_rows=15):
             if j == 0:  # adjust index if needed, here 3rd visible col is image
                 img_src = str(dataframe.iloc[i][col])
                 cells.append(html.Td(html.Img(src=img_src, style={
-                    "height": "400px",
+                    "height": "200px",
                     "width": "auto",
                     "display": "block",
                     "objectFit": "cover"
