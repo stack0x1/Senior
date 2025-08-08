@@ -11,6 +11,12 @@ def generate_table(dataframe, max_rows=15):
     for i in range(min(len(dataframe), max_rows)):
         cells = []
         for j, col in enumerate(cols):
+            if j == 0:  # 1st column -> image
+                # OPTION A: if you set up a Flask route at /img/<filename>
+                cells.append(html.Td(html.Img(src=str(dataframe.iloc[i, j]), style={"height": "500px"})))
+                # OPTION B: if you copied images to ./assets/images/
+                # cells.append(html.Td(html.Img(src=f"/assets/images/{fname}", style={"height": "100px"})))
+            else:
                 cells.append(html.Td(str(dataframe.iloc[i, j])))
         rows.append(html.Tr(cells))
 
@@ -23,7 +29,7 @@ def generate_table(dataframe, max_rows=15):
 app = Dash()
 
 app.layout = html.Div([
-    html.H4(children='Waterview Pkwy & Synergy Park Blvd'),
+    html.H4(children='Waterview Pkwy & Synergy Park Blvd (40mph)'),
     generate_table(df)
 ])
 
