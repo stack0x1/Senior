@@ -1,0 +1,22 @@
+table {
+    border-collapse: collapse;   /* Merge borders into single lines */
+    width: 75%;                 /* Make table span full width */
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+}
+
+table tr:hover {
+    background-color: #4b97bd;   /* Light blue on hover */
+}
+
+th {
+    background-color: #c77914;   /* Green header */
+    color: white;                /* White text */
+    text-align: left;
+    padding: 10px;
+}
+
+/* Cell styling */
+td {
+    border-bottom: 5px solid #000000; 
+}

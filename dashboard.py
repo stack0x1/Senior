@@ -1,9 +1,7 @@
 from dash import Dash, html
 import pandas as pd
-import os
 
 df = pd.read_csv('speeders.csv')
-
 
 def generate_table(dataframe, max_rows=15):
     cols = list(dataframe.columns)
@@ -12,10 +10,7 @@ def generate_table(dataframe, max_rows=15):
         cells = []
         for j, col in enumerate(cols):
             if j == 0:  # 1st column -> image
-                # OPTION A: if you set up a Flask route at /img/<filename>
                 cells.append(html.Td(html.Img(src=str(dataframe.iloc[i, j]), style={"height": "500px"})))
-                # OPTION B: if you copied images to ./assets/images/
-                # cells.append(html.Td(html.Img(src=f"/assets/images/{fname}", style={"height": "100px"})))
             else:
                 cells.append(html.Td(str(dataframe.iloc[i, j])))
         rows.append(html.Tr(cells))
@@ -24,7 +19,6 @@ def generate_table(dataframe, max_rows=15):
         html.Thead(html.Tr([html.Th(c) for c in cols])),
         html.Tbody(rows)
     ])
-
 
 app = Dash()
 
